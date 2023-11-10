@@ -31,7 +31,8 @@ task zip(type: Zip) {
 		include "routes/**"
 		include "views/**"
 	}
-	into "trainSchedule/dist"
+	destinationDirectory = layout.buildDirectory.dir("trainSchedule")
+	baseName = "dist"
 }
 
 //declare task dependencies
