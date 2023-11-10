@@ -31,8 +31,7 @@ task zip(type: Zip) {
 		include "routes/**"
 		include "views/**"
 	}
-	into "dist"
-	baseName "trainSchedule"
+	into "trainSchedule/dist"
 }
 
 //declare task dependencies
