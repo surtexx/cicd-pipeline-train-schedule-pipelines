@@ -32,7 +32,7 @@ task zip(type: Zip) {
 		include "views/**"
 	}
 	destinationDirectory = layout.buildDirectory.dir("trainSchedule")
-	baseName = "dist"
+	archiveBaseName = "dist"
 }
 
 //declare task dependencies
